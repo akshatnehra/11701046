@@ -89,3 +89,19 @@ int main()
                 } 
             } 
         } 
+		  // If we could not find a next process in safe sequence
+        if (found == false) 
+        { 
+            printf("System is not in safe state");  
+        } 
+    } 
+  
+
+    // safe sequence will be as below 
+    printf("System is in safe state\n");
+    printf("Sequence is: "); 
+    for (int i = 0; i < P ; i++) 
+        printf("P%d_____",safeSeq[i]+1);
+
+} 
+
