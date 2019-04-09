@@ -3,7 +3,7 @@ int main()
 { 
 	int Pr=5,Re=3;
  	// Number of processes 
-    // Number of resources 
+    // Number of resources.. 
 	printf("Enter number of process and resources:	");
 	scanf("%d%d",&Pr,&Re);
 	const int P=Pr,R=Re;
