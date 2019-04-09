@@ -65,7 +65,7 @@ int main()
         bool found = false; 
         for (int p = 0; p < P; p++) 
         { 
-            // checking process is finished or not
+            // checking process is finished or not??
             if (finish[p] == 0) 
             { 
                 // checking that current process less than work
