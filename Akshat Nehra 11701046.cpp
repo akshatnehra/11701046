@@ -14,3 +14,23 @@ int main()
 	{
 		scanf("%d",&avail[i]);
 	} 
+    // Maximum Resources that can be allocated
+    int maxm[10][10];
+    for(int i=0;i<P;i++)
+	{
+		printf("Enter maximum required resources for P%d:	",i+1);
+		for(int j=0;j<R;j++)
+		{
+			scanf("%d",&maxm[i][j]);
+		}
+	}
+    // Allocated Resources to processes 
+    int allot[10][10];   
+    for(int i=0;i<P;i++)
+	{
+		printf("Enter resources allocated by P%d:	",i+1);
+		for(int j=0;j<R;j++)
+		{
+			scanf("%d",&allot[i][j]);
+		}
+	}
