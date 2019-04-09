@@ -35,7 +35,7 @@ int main()
 			scanf("%d",&allot[i][j]);
 		}
 	}
-    // Required Resources 
+    // Required Resources... 
    int need[P][R]; 
   
     // Calculating Need(Required Resources by Process) 
