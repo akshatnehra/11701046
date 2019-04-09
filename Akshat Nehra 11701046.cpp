@@ -47,3 +47,13 @@ int main()
   
     // Mark all processes as not finished
     bool finish[P] = {0}; 
+    // Safe sequence 
+    int safeSeq[P]; 
+  
+    // Copy of available resources 
+    int work[R]; 
+    for (int i = 0; i < R ; i++) 
+        work[i] = avail[i]; 
+  
+    // while all processes are not finished 
+    int count = 0; 
