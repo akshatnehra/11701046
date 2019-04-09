@@ -34,3 +34,16 @@ int main()
 			scanf("%d",&allot[i][j]);
 		}
 	}
+	// Required Resources 
+   int need[P][R]; 
+  
+    // Calculating Need(Required Resources by Process) 
+    for (int i = 0 ; i < P ; i++) 
+        for (int j = 0 ; j < R ; j++) 
+  
+            // Need of instance = maxm instance - 
+            //                    allocated instance 
+            need[i][j] = maxm[i][j] - allot[i][j]; 
+  
+    // Mark all processes as not finished
+    bool finish[P] = {0}; 
