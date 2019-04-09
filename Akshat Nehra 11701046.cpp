@@ -61,7 +61,7 @@ int main()
     int count = 0; 
     while (count < P) 
     { 
-        // Find a process which is not finish 
+        // Find a process which is not finish... 
         bool found = false; 
         for (int p = 0; p < P; p++) 
         { 
