@@ -57,3 +57,35 @@ int main()
   
     // while all processes are not finished 
     int count = 0; 
+	while (count < P) 
+    { 
+        // Find a process which is not finish 
+        bool found = false; 
+        for (int p = 0; p < P; p++) 
+        { 
+            // checking process is finished or not
+            if (finish[p] == 0) 
+            { 
+                // checking that current process less than work
+                int j; 
+                for (j = 0; j < R; j++) 
+                    if (need[p][j] > work[j]) 
+                        break; 
+  
+                // If all needs of p were satisfied. 
+                if (j == R) 
+                { 
+                    // Add resources of current process to available resources 
+                    for (int k = 0 ; k < R ; k++) 
+                        work[k] += allot[p][k]; 
+  
+                    // Add this process to safe sequence. 
+                    safeSeq[count++] = p; 
+  
+                    // Mark this p as finished 
+                    finish[p] = 1; 
+  
+                    found = true; 
+                } 
+            } 
+        } 
